@@ -1,0 +1,14 @@
+{
+    "model_class": "models.ImprovedProteinConv1DClassifier",
+    "model_args_grid": {
+        "conv_out_channels": [32, 64, 128],
+        "kernel_size": [3, 5, 7],
+        "dilation": [1, 2, 4],
+		"sequence_length": ["PLACEHOLDER"]
+    },
+    "training_params_grid": {
+        "learning_rate": [0.001, 0.0005],
+        "weight_decay": [0.0001, 0.00001]
+    },
+    "model_name_prefix": "improved_conv1d"
+}

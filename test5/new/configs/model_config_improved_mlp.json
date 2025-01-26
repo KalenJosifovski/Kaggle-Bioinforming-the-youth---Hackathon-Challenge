@@ -1,0 +1,12 @@
+{
+    "model_class": "models.ImprovedProteinMLPClassifier",
+    "model_args_grid": {
+        "hidden_dims": [[512, 256, 128], [256, 128, 64], [1024, 512, 256]],
+        "dropout": [0.2, 0.3, 0.5]
+    },
+    "training_params_grid": {
+        "learning_rate": [0.001, 0.0005, 0.0001],
+        "weight_decay": [0.0001, 0.00001]
+    },
+    "model_name_prefix": "improved_mlp"
+}

@@ -1,0 +1,13 @@
+{
+    "model_class": "models.ImprovedProteinBiLSTMClassifier",
+    "model_args_grid": {
+        "hidden_dim": [128, 256, 512],
+        "num_layers": [2, 3, 4],
+        "attention": [true, false]
+    },
+    "training_params_grid": {
+        "learning_rate": [0.001, 0.0005],
+        "weight_decay": [0.0001, 0.00001]
+    },
+    "model_name_prefix": "improved_bilstm"
+}
